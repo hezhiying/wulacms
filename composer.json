@@ -15,7 +15,8 @@
 	"wula/ui": "*",
 	"wula/form": "*",
 	"wulacms/core": "*",
-	"wulacms/dashboard": "*"
+	"wulacms/dashboard": "*",
+    "michelf/php-markdown": "^1.7"
   },
   "require-dev": {
 	"psr/log": "^1.0",

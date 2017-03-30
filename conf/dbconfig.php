@@ -6,10 +6,10 @@ $config = new \wulaphp\conf\DatabaseConfiguration('default');
 $config->driver(env('db.driver', 'MySQL'));
 $config->host(env('db.host', 'localhost'));
 $config->port(env('db.port', '3306'));
-$config->dbname(env('db.name', ''));
+$config->dbname(env('db.name', 'wula'));
 $config->encoding(env('db.charset', 'UTF8MB4'));
 $config->user(env('db.user', 'root'));
-$config->password(env('db.password', ''));
+$config->password(env('db.password', '123123'));
 $options = env('db.options', '');
 if ($options) {
 	$options = explode(',', $options);
@@ -26,3 +26,5 @@ if ($options) {
 	}
 	$config->options($dbops);
 }
+
+return $config;
